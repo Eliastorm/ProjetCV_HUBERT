@@ -1,0 +1,385 @@
+html, body {
+    overflow: hidden; /* Désactive le défilement par défaut */
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(29, 40, 90);
+    position: absolute;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    background-image: url("../../img/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px; /* Positionne le bouton en bas */
+    right: 20px; /* Positionne le bouton à droite */
+    background-color: #3498db; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px 15px; /* Espacement intérieur */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Curseur en main */
+    text-decoration: none; /* Pas de soulignement */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+
+li {
+    width: 20%;
+    height: auto;
+    vertical-align: center;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1.5%;
+}
+
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(255, 238, 140);
+}
+
+#logo {
+    width: 5%;
+    height: auto;
+    margin-right: 0%;
+}
+
+
+#logo img {
+    width: 100%; 
+    height: auto;
+}
+.navitemstel, .titre {
+    display: none;
+}
+
+#introduction {
+    display: flex; /* Active Flexbox */
+    flex-direction: row; /* Aligne les éléments en colonne */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    width: auto;
+    height: 100vh;
+    background-color: rgb(38, 52, 114);
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    color: white;
+}
+
+#passions {
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Aligne les éléments en colonne */
+    justify-content:space-evenly; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    width: auto;
+    height: 100vh;
+    background-color: rgb(38, 52, 114);
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+#photospassion {
+    display: flex; /* Active Flexbox */
+    flex-direction: row; /* Aligne les éléments en colonne */
+}
+
+.pass {
+    width: 15vw;
+    height: auto;
+    position: relative;
+    margin-right: 5vw;
+    border-radius: 10%;
+}
+
+.credits {
+    margin-top: -0.1em;
+    font-size: 0.5em;
+    text-align: left;
+    margin-left: 2em;
+}
+
+#moi {
+    width: 20vw;
+    height: auto;
+    position: relative;
+    margin-right: 5%;
+    border-radius: 10%;
+}
+
+.text {
+    text-align: left;
+    vertical-align: top;
+}
+
+.vide {
+    width: auto;
+    height: 100vh;
+    background-color: rgba(38, 52, 114, 0);
+    color: white;
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Aligne les éléments en colonne */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    text-align: justify;
+    padding-right: 11%;
+    padding-left: 11%;
+}
+.auteur {
+    align-self: flex-end;
+}
+
+footer {
+    background-color: rgb(29, 40, 90);
+    margin: 0;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    color: white;
+}
+footer h3 {
+    color: rgb(255, 238, 140);
+}
+.testtt {
+    margin-bottom: 1.5em;
+}
+
+h1 {
+    color: rgb(255, 238, 140);
+}
+
+h2 {
+    font-size: 60px;
+}
+
+/* caroussel là */
+
+.carousel {
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.carousel .slide {
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+.coor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.coor2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-bottom: 2em;
+}
+footer a {
+    text-decoration: none;
+    vertical-align: middle;
+    color: white;
+}
+.coordo {
+    width: 40px;
+    height: 40px;
+    margin-right: 3em;
+}
+
+.carousel .active {
+    display: block;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+
+    html, body {
+        overflow:auto; /* Désactive le défilement par défaut */
+    }
+    body {
+        font-size: larger;
+        margin: 0; /* Assurez-vous qu'il n'y a pas de marges par défaut */
+        padding: 0; /* Assurez-vous qu'il n'y a pas de padding par défaut */
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column; /* Alignement vertical */
+        position: absolute; /* Positionnement pour les éléments enfants */
+    }
+
+    #logo {
+        width: 100vw; /* Largeur du logo */
+        height: auto;
+        align-self: flex-start; /* Aligne le logo en haut */
+        cursor: pointer; /* Change le curseur en pointeur */
+        display: flex;
+        align-items: center;
+    }
+    #logo img {
+        width: 20%; /* Largeur du logo */
+        height: auto;
+        margin-right: 10%;
+    }
+
+    .navitems {
+        display: none; /* Masque le menu par défaut */
+        position: absolute; /* Permet de superposer le menu */
+        background-color: rgb(29, 40, 90); /* Couleur de fond du menu */
+        width: 28%; /* Largeur du menu égale à celle du conteneur */
+        z-index: 1000; /* Assure que le menu est au-dessus des autres éléments */
+        left: 0; /* Aligne le menu à gauche */
+        top: 100%; /* Place le menu juste en dessous du logo */
+        text-align: center; /* Centrage du texte dans le menu */
+        padding: 6%;
+        font-size: 12px;
+    }
+
+    .navitems li {
+        margin: 10px 0; /* Ajoute de l'espace vertical entre les éléments du menu */
+    }
+    
+    .navitems a {
+        display: block; /* Permet de cliquer sur tout l'élément */
+        padding: 10px 0; /* Ajoute un padding vertical pour chaque élément de menu */
+        color: rgb(255, 238, 140); /* Couleur des liens */
+        text-decoration: none; /* Pas de soulignement sur les liens */
+    }
+    
+    .navitems a:hover {
+        background-color: rgba(255, 238, 140, 0.2); /* Effet au survol */
+    }
+
+    .navitems.active {
+        display: block; /* Affiche le menu lorsqu'il a la classe active */
+    }
+
+.titre {
+    display: contents;
+    color: rgb(255, 238, 140);
+}
+
+footer {
+    display: flex;
+    flex-direction: column; /* Mise en colonne des éléments */
+    justify-content: flex-start;
+    align-items: center; /* Centre le contenu horizontalement */
+    height: auto;
+    padding: 20px 5%; /* Ajout de padding en haut et bas */
+    text-align: center; /* Centre le texte à l'intérieur des éléments */
+}
+
+/* Cacher l'image du logo */
+footer img {
+    display: none;
+}
+footer .coor,
+footer .coor2 {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre les éléments à l'intérieur des coordonnées */
+}
+
+footer .coordo {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+}
+#photospassion {
+    display: flex; /* Active Flexbox */
+    flex-direction: column; /* Aligne les éléments en colonne */
+}
+.pass {
+    width: 150px;
+    height: auto;
+}
+
+body {
+    background-image: url("../../img/wallpapermobile.jpg");
+}
+
+.vide {
+    height: 50vh;
+    width: auto;
+}
+
+.slide h2 {
+    font-size: 18px;
+    color: black;
+}
+
+.slide .auteur {
+    font-size: 14px;
+    color: black;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+}
+#moi {
+    width: 150px;
+    height: auto;
+    margin-top: 100px;
+}
+
+}
+
+footer #droits {
+    display: block; /* Affiche le texte par défaut (pour les grands écrans) */
+}
+
+footer #droit {
+    display: none; /* Cache le texte par défaut (pour les grands écrans) */
+}
+
+/* Sur les écrans de téléphone, inversez l'affichage */
+@media (max-width: 768px) {
+    footer #droits {
+        display: none; /* Cache l'élément pour les petits écrans */
+    }
+
+    footer #droit {
+        display: block; /* Affiche l'élément pour les petits écrans */
+        font-size: 0.8rem; /* Réduit la taille du texte */
+        color: gray; /* Rend le texte gris */
+        margin-top: auto; /* Pousse le texte vers le bas du footer */
+        text-align: center; /* Centre le texte */
+    }
+}
+
