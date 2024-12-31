@@ -31,5 +31,18 @@
     <h1>404 - Page non trouvée</h1>
     <p>La page que vous recherchez n'existe pas.</p>
     <p><a href="/">Retour à l'accueil</a></p>
+
+    <script>
+    // Récupérer l'URL de la page actuelle
+    const currentPath = window.location.pathname;
+
+    // Si l'URL ne contient pas d'extension (et n'est pas la racine ou 404.html)
+    if (!currentPath.endsWith(".html") && currentPath !== "/" && currentPath !== "/404.html") {
+        // Rediriger vers la version avec .html
+        const newPath = currentPath + ".html";
+        window.location.href = newPath;
+    }
+</script>
+
 </body>
 </html>
