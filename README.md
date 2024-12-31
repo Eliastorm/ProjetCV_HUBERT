@@ -1,6 +1,6 @@
 # CV et Portfolio
 
-Ce projet est un site web contenant un **CV**, un **portfolio**, et d'autres informations personnelles et professionnelles. Réalisé uniquement avec **HTML**, **CSS** et **JavaScript**, il met en avant un design épuré et une mise en page responsive.
+Ce projet est un site web contenant un **CV**, un **portfolio**, et d'autres informations personnelles et professionnelles. Réalisé uniquement avec **HTML**, **CSS** et **JavaScript**, il met en avant un design original et une mise en page responsive.
 
 ## Fonctionnalités
 - Présentation d'un CV détaillé.
