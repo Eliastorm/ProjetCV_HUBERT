@@ -39,7 +39,7 @@
     // Si l'URL ne contient pas d'extension et n'est pas la racine ou la page 404
     if (!currentPath.endsWith(".html") && currentPath !== "/" && currentPath !== "/404.html") {
         // Rediriger vers la version avec .html dans le dossier src/pages/
-        const newPath = "/src/pages" + currentPath + ".html";
+        const newPath = currentPath + "/src/pages" + ".html";
         window.location.href = newPath;
     }
 </script>
