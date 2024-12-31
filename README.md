@@ -25,5 +25,5 @@ Ce projet est un site web contenant un **CV**, un **portfolio**, et d'autres inf
 ## Lien vers la version en ligne
 Le site est hébergé sur GitHub Pages. Vous pouvez le consulter via le lien suivant :
 
-[Version en ligne du projet](https://eliastorm.github.io/ProjetCV_HUBERT/index.html)
+[Version en ligne du projet](https://eliastorm.github.io/ProjetCV_HUBERT/)
 
