@@ -11,7 +11,7 @@ Ce projet est un site web contenant un **CV**, un **portfolio**, et d'autres inf
 ## Étapes pour ouvrir et visualiser le site en local
 1. **Clonez le dépôt** :
    ```bash
-   git clone <lien-du-dépôt>
+   git clone https://github.com/Eliastorm/ProjetCV_HUBERT.git
    ```
 
 2. **Naviguez vers le répertoire du projet** :
