@@ -36,11 +36,11 @@
     // Récupérer l'URL de la page actuelle
     const currentPath = window.location.pathname;
 
-    // Si l'URL ne contient pas d'extension (et n'est pas la racine ou 404.html)
+    // Si l'URL ne contient pas d'extension et n'est pas la racine ou la page 404
     if (!currentPath.endsWith(".html") && currentPath !== "/" && currentPath !== "/404.html") {
-        // Rediriger vers la version avec .html dans le dossier src/pages/
-        const newPath = currentPath.replace(/^\/$/, '/index') + '.html'; // Cas pour la page d'accueil
-        window.location.href = `/${newPath}`;
+        // Rediriger vers la version avec .html
+        const newPath = currentPath + ".html";
+        window.location.href = newPath;
     }
     </script>
 
