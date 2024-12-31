@@ -38,8 +38,8 @@
 
     // Si l'URL ne contient pas d'extension (et n'est pas la racine ou 404.html)
     if (!currentPath.endsWith(".html") && currentPath !== "/" && currentPath !== "/404.html") {
-        // Rediriger vers la version avec .html dans le dossier src/pages/ du projet
-        const newPath = "/ProjetCV_HUBERT/src/pages" + currentPath + ".html";
+        // Rediriger vers la version avec .html dans le dossier src/pages/ sans répéter le nom du projet
+        const newPath = "/src/pages" + currentPath + ".html";
         window.location.href = newPath;
     }
 </script>
