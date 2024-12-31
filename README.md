@@ -27,3 +27,5 @@ Le site est hébergé sur GitHub Pages. Vous pouvez le consulter via le lien sui
 
 [Version en ligne du projet](https://eliastorm.github.io/ProjetCV_HUBERT/)
 
+## Errors 404
+Il me semble que github pages ne prends pas en charge le .htaccess, de ce fait, j'ai trouvé une solution en javascript.
